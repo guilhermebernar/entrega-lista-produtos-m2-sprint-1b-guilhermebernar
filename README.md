@@ -132,7 +132,7 @@ function filtrarPorHortifruti() {
     montarListaProdutos(listaHortifruti);
 
     // Selecionando botao em nosso HTML
-    const botaoMostrarHortifruti = document.querySelector('.estiloGeralBotoes--filtrarHortifruti');
+    const botaoMostrarHortifruti = document.querySelector('.btn--filtrarHortifruti');
 
     // Adicionando event listener de clique, e executando a função de filtro
     botaoMostrarHortifruti.addEventListener('click', filtrarPorHortifruti);

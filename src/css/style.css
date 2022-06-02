@@ -10,24 +10,31 @@ body {
     padding: 30px;
 }
 
-.estiloGeralBotoes{
-    border: none;
-    font-weight: bold;
-    border-radius: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
-    display: block;
-    font-size: 0.9rem;
+.btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 26px;
+    gap: 10px;
+    width: 177px;
+    height: 52px;
+    left: 146px;
+    top: 94px;
 }
 
-.estiloGeralBotoes--mostrarTodos {
-    color: black;
-    background-color: #d3d3d3;
+.btnAll {
+    background: #12B886;
+    border: 1.5px solid #12B886;
+    border-radius: 8px;
+    color: #FFFFFF;
 }
 
-.estiloGeralBotoes--filtrarHortifruti {
-    background-color: tomato;
-    color: white;
+.btn-section {
+    background: rgba(18, 184, 134, 0.05);
+    border: 1.5px solid rgba(18, 184, 134, 0.05);
+    border-radius: 8px;
+    
 }
 
 .containerBuscaPorNome {
@@ -35,24 +42,78 @@ body {
     justify-content: space-between;
 }
 
-.campoBuscaPorNome {
-    border-radius: 5px 0 0 5px;
-    border: 1px solid black;
-    padding: 0 10px;
+.SearchField {
+
+    width: 324px;
+    height: 52px;
+    left: 925px;
+    top: 94px;
+
+    background: #F1F3F5;
+    border-radius: 8px;
 }
 
-.estiloGeralBotoes--botaoBuscaPorNome {
-    background-color: rgb(17, 17, 20);
-    color: white;
-    border-radius: 0 5px 5px 0;
+.btn--seach {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 26px;
+    gap: 10px;
+
+    width: 59px;
+    height: 59px;
+    left: 1258px;
+    top: 94px;
+
+    background: #12B886;
+    border: 1.5px solid #12B886;
+    border-radius: 8px;
+}
+
+.imgSearch{
+    align-items: center;
+    max-width: 30px;
+    left: 12.5%;
+    right: 20.83%;
+    top: 12.5%;
+    bottom: 20.83%;
+    border: 1.58333px solid #ffffff00;
+    fill: #FFFFFF;
 }
 
 /* CONTEÚDO */
-main{}
+#main{
+    display: block;
+    justify-content: center;
+}
+
+.item{
+    
+    list-style-type: none;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    padding: 10px;
+}
+
+.card{
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 150px;
+    height: 250px;
+    margin: 20px;
+    text-align: center;
+    font-family: arial;
+    border-radius: 20px;
+}
 
 .containerListaProdutos {
+    display:flex;
+    flex-wrap: wrap;
     width: 100%;
-    max-width: 800px;
+    max-width: 80%;
     margin: 0 auto;
 }
 
@@ -97,11 +158,8 @@ main{}
 }
 
 /* PREÇO TOTAL */
-.containerPrecoTotal{
+#total{
     text-align: center;
-}
-.containerPrecoTotal p{
     font-size: 1.4rem;
     font-weight: 600;
 }
-.containerPrecoTotal p span{}

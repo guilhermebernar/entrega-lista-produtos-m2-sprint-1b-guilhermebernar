@@ -1,5 +1,6 @@
 const produtos = [
     {
+        id: 1,
         nome: 'Banana',
         preco: 2,
         secao: 'Hortifruti',
@@ -7,6 +8,7 @@ const produtos = [
         img: "./src/img/banana.png"
     },
     {
+        id: 2,
         nome: 'Morango',
         preco: 2,
         secao: 'Hortifruti',
@@ -14,13 +16,15 @@ const produtos = [
         img: './src/img/morango.png'
     },
     {
+        id: 3,
         nome: 'Maçã',
         preco: 2,
         secao: 'Hortifruti',
         categoria: 'fruta',
-        img: './src/img/maça.png'
+        img: './src/img/maca.png'
     },
     {
+        id: 4,
         nome: 'Pão',
         preco: 4,
         secao: 'Panificadora',
@@ -28,6 +32,7 @@ const produtos = [
         img: './src/img/pao.png'
     },
     {
+        id: 5,
         nome: 'Leite',
         preco: 5,
         secao: 'Laticínio',
