@@ -29,26 +29,45 @@ body {
     border-radius: 8px;
     color: #FFFFFF;
 }
+.btnAll:hover {
+    background: rgba(18, 184, 134, 0.61);
+    border: 1.5px solid rgba(18, 184, 134, 0.61);
+    border-radius: 8px;
+    color: #FFFFFF;
+}
 
 .btn-section {
     background: rgba(18, 184, 134, 0.05);
     border: 1.5px solid rgba(18, 184, 134, 0.05);
     border-radius: 8px;
+    color: #12B886;
     
 }
 
-.containerBuscaPorNome {
+.btn-section:hover{
+    background: #12B886;
+    border: 1.5px solid #12B886;
+    border-radius: 8px;
+    color: #FFFFFF;
+    
+}
+
+.form{
     display: flex;
     justify-content: space-between;
+    gap: 10px;
+
 }
 
 .SearchField {
 
-    width: 324px;
+    display: flex;
+    width: 250px;
     height: 52px;
-    left: 925px;
+    left: 300px;
     top: 94px;
 
+    border: 0;
     background: #F1F3F5;
     border-radius: 8px;
 }
@@ -62,12 +81,29 @@ body {
     gap: 10px;
 
     width: 59px;
-    height: 59px;
+    height: 52px;
     left: 1258px;
     top: 94px;
 
     background: #12B886;
     border: 1.5px solid #12B886;
+    border-radius: 8px;
+}
+.btn--seach:hover {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 26px;
+    gap: 10px;
+
+    width: 59px;
+    height: 52px;
+    left: 1258px;
+    top: 94px;
+
+    background: rgba(18, 184, 134, 0.61);
+    border: 1.5px solid rgba(18, 184, 134, 0.61);
     border-radius: 8px;
 }
 
@@ -83,9 +119,18 @@ body {
 }
 
 /* CONTEÚDO */
-#main{
-    display: block;
+main{
+
+    flex:3;
+    display: flex;
     justify-content: center;
+}
+aside{
+    margin: 0 50px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
 }
 
 .item{
@@ -99,14 +144,53 @@ body {
 }
 
 .card{
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    width: 150px;
-    height: 250px;
     margin: 20px;
+    height: 360px;
+    width: 180px;
     text-align: center;
     font-family: arial;
     border-radius: 20px;
+}
+
+.nameItem{
+   color: #12B886;
+   padding: 14px;
+}
+
+.adcButton{
+    display: flex;
+    justify-content: center;
+    background: #12B886;
+    border: 1.5px solid #12B886;
+    height: 50px;
+    width: 100px;
+    border-radius: 8px;
+    color: #FFFFFF;
+}
+.adcButton:hover{
+    background: #b0d6cb;
+    border: 1.5px solid #b0d6cb;
+    border-radius: 8px;
+    color: #12B886;
+}
+
+.preco{
+    margin-bottom: 10px;
+}
+
+.imgAddCart{
+    justify-content: center;
+    height: 35px;
+    margin-top: 8px;
+}
+
+.secao{
+    margin-top: 8px;
+    margin-bottom: 10px;
 }
 
 .containerListaProdutos {
@@ -157,9 +241,34 @@ body {
     display: inline-block;
 }
 
-/* PREÇO TOTAL */
+.cartTitle{
+    width: 350px;
+    height: 42px;
+    left: 13px;
+    top: 579px;
+    justify-content: center;
+    background: #12B886;
+    border-radius: 12px 12px 0px 0px;
+}
+
+.itemList{
+
+}
+
+.carrinho{
+
+}
+
 #total{
     text-align: center;
     font-size: 1.4rem;
     font-weight: 600;
+}
+
+@media(max-width:425px){
+    main{
+        display:flex;
+        flex-direction: column
+    }
+
 }

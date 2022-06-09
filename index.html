@@ -16,22 +16,35 @@
             <button id="Hortifruti" class="btn btn-section">Hortifruti</button>
             <button id="Panificadora" class="btn btn-section">Panificadora</button>
             <button id="Laticinio" class="btn btn-section">Laticinio</button>
-            <div class="containerBuscaPorNome">
-                <form action="">
-                    <input id="search" type="text" placeholder="Pesquisar..." class="SearchField">
-                    <button id="btnS" class="btn btn--seach"><img class="imgSearch" src="./src/img/mp.svg" ></button>
-                </form>
-            </div>
+
+            <form class="form" action="">
+                <input id="search" type="text" placeholder="Pesquisar..." class="SearchField">
+                <button id="btnS" class="btn btn--seach"><img class="imgSearch" src="./src/img/mp.svg" ></button>
+            </form>
+            
         </div>
     </header>
     
-    <main id="main">
-        <div id="total" class="containerPrecoTotal"></div>
-        <!-- produtos -->
+    <main>
+        <div id="main">
+            <!-- produtos -->
+        </div>
+        
+        <aside id="cart">
+            <div class="cartTitle">
+                <div>Carrinho:</div>
+            </div>
+            <!-- carrinho -->
+            <div id="total" class="containerPrecoTotal"></div>
+        </aside>
     </main>
+
     <script src="src/js/dataProdutos.js"></script>
-    <script src="src/js/script.js"></script>
+    <script src="src/js/cart.js"></script>
     <script src="src/js/selectSections.js"></script>
+    <script src="src/js/script.js"></script>
+    
+    
     
 </body>
 </html>

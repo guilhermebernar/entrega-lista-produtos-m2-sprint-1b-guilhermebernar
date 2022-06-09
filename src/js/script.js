@@ -7,7 +7,7 @@ card.id = "listaP"
 
 function cMaker(produtos) {
     card.innerHTML = ""
-    for (let i = 0; i < produtos.length; i++) {
+    for(let i = 0; i < produtos.length; i++) {
         
         const  item  = document.createElement("li")
 
@@ -17,6 +17,7 @@ function cMaker(produtos) {
         const preco          = produtos[i].preco
         const categoria      = produtos[i].categoria
         const secao          = produtos[i].secao
+        const componentes    = produtos[i].componentes
         
         const  tagDiv        = document.createElement("div")
         const  tagimg        = document.createElement("img")
@@ -24,32 +25,41 @@ function cMaker(produtos) {
         const  tagPreco      = document.createElement("p")
         const  tagcategory   = document.createElement("p")
         const  tagButton     = document.createElement("div")
+        const  tagButtonImg  = document.createElement("img") 
         const  tagsecao      = document.createElement("div")
+        const  tagcompo      = document.createElement("div")
 
         tagimg.src           = img
         tagName.innerHTML    = `${name}`
         tagPreco.innerHTML   = `Preço: R$ ${preco}`
         tagcategory.innerHTML= `${categoria}`
-        //tagButton.innerHTML  = `adicionar`
-        //tagButton.id         = id
+        tagButtonImg.src     = "./src/img/addCart.png"
+        tagButton.id         = id
         tagsecao.innerHTML   = `${secao}`
-
-        //tagButton.addEventListener("click",()=>) 
+        tagcompo.innerHTML   = `Nutrientes:<br>${componentes[0]}<br>${componentes[1]}<br>${componentes[2]}<br>${componentes[3]}`
 
         tagDiv.classList.add("card")
         tagName.classList.add("nameItem")
         tagPreco.classList.add("preco")
         tagcategory.classList.add("category")
         tagButton.classList.add("adcButton")
+        tagButtonImg.classList.add("imgAddCart")
         tagsecao.classList.add("secao")
+        tagcompo.classList.add("compo")
 
         item.classList.add("item")
+        tagButton.addEventListener("click", addToCart)
+        //tagButtonImg.addEventListener("click",)
 
+        
         tagDiv.appendChild(tagimg)
         tagDiv.appendChild(tagName)
         tagDiv.appendChild(tagPreco)
         tagDiv.appendChild(tagButton)
         tagDiv.appendChild(tagsecao)
+        tagDiv.appendChild(tagcompo)
+
+        tagButton.appendChild(tagButtonImg)
         
         item.appendChild(tagDiv)
         card.appendChild(item)
@@ -57,18 +67,3 @@ function cMaker(produtos) {
 }
 
 cMaker(produtos)
-
-
-
-//Preço:
-
-function vtotal(value) {
-    let total = 0
-    for (let i = 0; i < value.length; i++){
-        total += value[i].preco  
-    }
-    console.log(total)
-    const plotTotal = document.getElementById("total")
-    plotTotal.innerText = `Valor total da compra é de ${total}`
-}
-
